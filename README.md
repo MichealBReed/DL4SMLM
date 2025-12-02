@@ -66,6 +66,7 @@ srcnn_train_loss, srcnn_valid_loss = DL4SMLM.TrainValid(model = srcnn,train_data
 ```
 
 ## Test Model
+The TestModel function returns two vectors containing the Structured Similarity Index Measure and Normalized Mean Square Error. 
 ```python
 ssim, nmse = DL4SMLM.TestModel(srcnn,test_data_loader)
 ```
