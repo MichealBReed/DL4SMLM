@@ -987,8 +987,6 @@ def TrainValid(model = torch.nn.Module,train_dataloader = torch.utils.data.DataL
 
         for batch, (X,y) in enumerate(train_dataloader):
 
-            N,C,H,W = X.shape
-
             X,y = X.to(device), y.to(device)
 
             y_pred = model(X)
@@ -1017,8 +1015,6 @@ def TrainValid(model = torch.nn.Module,train_dataloader = torch.utils.data.DataL
         with torch.inference_mode():
 
             for batch, (X,y) in enumerate(valid_dataloader):
-
-                N,C,H,W = X.shape
 
                 X,y = X.to(device), y.to(device)
 
@@ -1051,12 +1047,18 @@ def HintTraining(teacher_model = torch.nn.Module,student_model = torch.nn.Module
     
 
     """
-    Function that automates the training and validation process of a model.
+    Performs the training and validation process for the student model in the attempt to have its output mirror that of the teacher model./
+    The error is the difference between the student model and the teacher model. These SHOULD NOT contain the entire model architetures of /
+    either the student or the teacher but should be intermediate reprentations whose NxCxHxW match. 
 
     Parameters
         ------------
-        model : torch.nn.Module
-            Model to be trained
+        teacher_model : torch.nn.Module
+            The model that assumedly performs better than the student network as a consequence of its architectural complexity. This should not be the entire model but instead a subcomponent of the model./
+            NxCxHxW should match that of the student model.
+        
+        student_model : torch.nn.Module
+            Model that will be the recipient of the hint from the teacher model. Normally, this model contains less convolutional layers than the teacher model. NxCxHxW should match that of the teacher model.
 
         train_dataloader : torch.utils.data.DataLoader
             Dataloader object containing the X,Y pairs of the training data.
@@ -1142,8 +1144,6 @@ def HintTraining(teacher_model = torch.nn.Module,student_model = torch.nn.Module
 
             for batch, (X,y) in enumerate(valid_dataloader):
 
-                N,C,H,W = X.shape
-
                 X,y = X.to(device), y.to(device)
 
                 student_predict = student_model(X)
@@ -1179,7 +1179,8 @@ def KnowledgeTransfer(student_model = torch.nn.Module,teacher_model = torch.nn.M
     
 
     """
-    Function that automates the training and validation process of a model.
+    Function that performes the Knowledge Transfer task between a teacher and a student model using the Attentive Imitation Loss Function from the /
+    2019 publication 'Distilling knowledge from a deep pose regressor network' by Saptura et al.
 
     Parameters
         ------------
