@@ -1,0 +1,90 @@
+@article{Nehme:18,
+author = {Elias Nehme and Lucien E. Weiss and Tomer Michaeli and Yoav Shechtman},
+journal = {Optica},
+keywords = {Image processing; Superresolution; Fluorescence microscopy; Algorithms ; Biomedical imaging; Deep learning; Neural networks; Spatial resolution; Super resolution imaging; Super resolution microscopy},
+number = {4},
+pages = {458--464},
+publisher = {Optica Publishing Group},
+title = {Deep-STORM: super-resolution single-molecule microscopy by deep learning},
+volume = {5},
+month = {Apr},
+year = {2018},
+url = {https://opg.optica.org/optica/abstract.cfm?URI=optica-5-4-458},
+doi = {10.1364/OPTICA.5.000458},
+abstract = {We present an ultrafast, precise, parameter-free method, which we term Deep-STORM, for obtaining super-resolution images from stochastically blinking emitters, such as fluorescent molecules used for localization microscopy. Deep-STORM uses a deep convolutional neural network that can be trained on simulated data or experimental measurements, both of which are demonstrated. The method achieves state-of-the-art resolution under challenging signal-to-noise conditions and high emitter densities and is significantly faster than existing approaches. Additionally, no prior information on the shape of the underlying structure is required, making the method applicable to any blinking dataset. We validate our approach by super-resolution image reconstruction of simulated and experimentally obtained data.},
+}
+
+
+
+
+@article{Zhou:23,
+author = {Zhiwei Zhou and Junnan Wu and Zhengxia Wang and Zhen-Li Huang},
+journal = {Biomed. Opt. Express},
+keywords = {Deep learning; Imaging techniques; Neural networks; Spatial resolution; Super resolution imaging; Wavefront distortions},
+number = {4},
+pages = {1833--1847},
+publisher = {Optica Publishing Group},
+title = {Deep learning using a residual deconvolutional network enables real-time high-density single-molecule localization microscopy},
+volume = {14},
+month = {Apr},
+year = {2023},
+url = {https://opg.optica.org/boe/abstract.cfm?URI=boe-14-4-1833},
+doi = {10.1364/BOE.484540},
+abstract = {High-density localization based on deep learning is a very effective method to accelerate single molecule localization microscopy (SMLM). Compared with traditional high-density localization methods, deep learning-based methods enable a faster data processing speed and a higher localization accuracy. However, the reported high-density localization methods based on deep learning are still not fast enough to enable real time data processing for large batches of raw images, which is probably due to the heavy computational burden and computation complexity in the U-shape architecture used in these models. Here we propose a high-density localization method called FID-STORM, which is based on an improved residual deconvolutional network for the real-time processing of raw images. In FID-STORM, we use a residual network to extract the features directly from low-resolution raw images rather than the U-shape network from interpolated images. We also use a model fusion from TensorRT to further accelerate the inference of the model. In addition, we process the sum of the localization images directly on GPU to obtain an additional speed gain. Using simulated and experimental data, we verified that the FID-STORM method achieves a processing speed of 7.31\&\#x2005;ms/frame at 256\&\#x2009;\&\#x00D7;\&\#x2009;256 pixels @ Nvidia RTX 2080 Ti graphic card, which is shorter than the typical exposure time of 10\&\#x223C;30\&\#x2005;ms, thus enabling real-time data processing in high-density SMLM. Moreover, compared with a popular interpolated image-based method called Deep-STORM, FID-STORM enables a speed gain of \&\#x223C;26 times, without loss of reconstruction accuracy. We also provided an ImageJ plugin for our new method.},
+}
+
+
+@article{YAO2018364,
+title = {Pixel-wise regression using U-Net and its application on pansharpening},
+journal = {Neurocomputing},
+volume = {312},
+pages = {364-371},
+year = {2018},
+issn = {0925-2312},
+doi = {https://doi.org/10.1016/j.neucom.2018.05.103},
+url = {https://www.sciencedirect.com/science/article/pii/S0925231218307008},
+author = {Wei Yao and Zhigang Zeng and Cheng Lian and Huiming Tang},
+keywords = {Convolutional neural network, Pixel-wise regression, Remote sensing, Pansharpening},
+abstract = {Convolutional neural networks are widely used for solving image recognition and other classification problems in which the whole image is considered as a single object. In this paper, we take the pansharpening problem of remote sensing images as an example to discuss how to establish pixel-wise regression models using convolutional neural networks. In order to meet the requirements of pixel-wise analysis on both the localization accuracy and the abstraction ability of the regression process, a U-shaped architecture is applied in our study to construct the network model. By establishing direct connections between convolution layers at the front end and the back end of the network, image features corresponding to different resolution levels can be retained. Then a regression relationship between these multi-resolution image features and the target image pixel values can be obtained. Experimental results show that the proposed regression model can effectively accomplish pansharpening, with better performance in controlling geometric deformation and color distortion, as compared to some state of the art methods.}
+}
+
+
+
+@article{Yao:20,
+author = {Bowen Yao and Wen Li and Wenhui Pan and Zhigang Yang and Danni Chen and Jia Li and Junle Qu},
+journal = {Opt. Express},
+keywords = {Deep learning; Image resolution; Machine learning; Neural networks; Spatial resolution; Super resolution microscopy},
+number = {10},
+pages = {15432--15446},
+publisher = {Optica Publishing Group},
+title = {Image reconstruction with a deep convolutional neural network in high-density super-resolution microscopy},
+volume = {28},
+month = {May},
+year = {2020},
+url = {https://opg.optica.org/oe/abstract.cfm?URI=oe-28-10-15432},
+doi = {10.1364/OE.392358},
+abstract = {An accurate and fast reconstruction algorithm is crucial for the improvement of temporal resolution in high-density super-resolution microscopy, particularly in view of the challenges associated with live-cell imaging. In this work, we design a deep network based on a convolutional neural network to take advantage of its enhanced ability in high-density molecule localization, and introduce a residual layer into the network to reduce noise. The proposed scheme also incorporates robustness against variations of both the full width at half maximum (FWHM) and the pixel size. We validate our algorithm on both simulated and experimental data by achieving performance improvement in terms of loss value and image quality, and demonstrate live-cell imaging with temporal resolution of 0.5 seconds by recovering mitochondria dynamics.},
+}
+
+
+@article{dong2015image,
+  title={Image super-resolution using deep convolutional networks},
+  author={Dong, Chao and Loy, Chen Change and He, Kaiming and Tang, Xiaoou},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={38},
+  number={2},
+  pages={295--307},
+  year={2015},
+  publisher={IEEE}
+}
+
+@article{baddeley2018biological,
+  title={Biological insight from super-resolution microscopy: what we can learn from localization-based images},
+  author={Baddeley, David and Bewersdorf, Joerg},
+  journal={Annual review of biochemistry},
+  volume={87},
+  number={1},
+  pages={965--989},
+  year={2018},
+  publisher={Annual Reviews}
+}
