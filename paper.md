@@ -11,6 +11,8 @@ tags:
 authors:
     - name: Micheal Brandon Reed, Reza Zadegan
       affilitation: "1, 2"
+    - name: Reza Zadegan
+      affiliation: "1,2 "
 affilifations:
     - name: North Carolina Agricultural and Technical State University, Greensboro, North Carolina, United States
       index: 1
