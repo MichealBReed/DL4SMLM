@@ -18,6 +18,7 @@ affilifations:
       index: 1
     - name: Joint School of Nanoscience and Nanoengineering, Greensboro, North Carolina, United States
       index: 2
+bibliography: paper.bib 
 
 ---
 
