@@ -9,7 +9,7 @@ tags:
     - Spatial Resolution
     - Super Resolution Microscopy
 authors:
-    - name: Micheal Brandon Reed, Reza Zadegan
+    - name: Micheal Brandon Reed
       affilitation: "1, 2"
     - name: Reza Zadegan
       affiliation: "1,2 "
