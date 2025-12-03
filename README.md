@@ -70,3 +70,17 @@ The TestModel function returns two vectors containing the Structured Similarity 
 ```python
 ssim, nmse = DL4SMLM.TestModel(srcnn,test_data_loader)
 ```
+
+## Load weights into a new instance of a model of the same architecture
+```python
+srcnn = DL4SMLM.SRCNN()
+srcnn.load_state_dict(torch.load(srcnn_save_path,weights_only=False,map_location=torch.device('cpu')))
+```
+
+
+## Use trained model to perform Single Molecule Localization on a Experimental Dataset
+```python
+srcnn_inferred_super_resolution_image = DL4SMLM.InferImage(model=srcnn,image_stack_dir='path_to_image_data_stack',inference_device='cpu',
+                                                    image_stack_mean=experimental_image_stack_mean,image_stack_std=experimental_image_stack_std)
+
+```
