@@ -9,9 +9,7 @@ tags:
     - Spatial Resolution
     - Super Resolution Microscopy
 authors:
-    - name: Micheal Brandon Reed
-      affiliation: "1, 2"
-    - name: Reza Zadegan
+    - name: Micheal Brandon Reed, Reza Zadegan
       affilitation: "1, 2"
 affilifations:
     - name: North Carolina Agricultural and Technical State University, Greensboro, North Carolina, United States
