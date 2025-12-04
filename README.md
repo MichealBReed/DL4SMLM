@@ -8,6 +8,11 @@ This codebase contains various deep learning models and helper functions develop
   - A100 MIG
   - GTX 1080
 - Inference was performed using the cpu with the following hardware specifications: 24 x Intel(R) Xeon(R) CPU E5-2643 v3 @ 3.40GHz
+- Prerequisites
+  - pytorch >= 2.1.0
+  - pytorch-cuda >= 11.8.0
+  - cuda >= 11.8.0 
+  
 
 ## Usage Example
 
