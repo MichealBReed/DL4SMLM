@@ -89,3 +89,6 @@ srcnn_inferred_super_resolution_image = DL4SMLM.InferImage(model=srcnn,image_sta
                                                     image_stack_mean=experimental_image_stack_mean,image_stack_std=experimental_image_stack_std)
 
 ```
+
+## License
+This project is covered under the MIT licence.
