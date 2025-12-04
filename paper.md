@@ -33,9 +33,8 @@ Molecule Localization Microscopy (DL4SMLM) in Python using the PyTorch framework
 
 # Statement of Need
 DL4SMLM is designed to automate the training, validation and testing of different machine learning models dedicated toward the single molecule localization task in a single software suite. Currently, such models are located in their respective code reposit
-ries and/or enmeshed into software plug-ins. While this makes their models publicly available it hinders rapid re-training, prototyping and comparison of different models on the same dataset. By providing this software environment, investigators can generat
-e their training data (simulated or experimentrally collected), train various models, and then decide which model is best suited for their task. Because our software is built atop of the Pytorch framework, our functions allow the user to designate which 
-device, CPU or GPU, the inference process will occur on. We allow this flexibility on the inference process because we want invesigators to be empowered to assess how their models will perform on the CPU of their choice especially where they wish to push their models onto compute limited devices such as mobile phones.   
+ries and/or enmeshed into software plug-ins. While this makes their models publicly available it hinders rapid re-training, prototyping and comparison of different models on the same dataset. By providing this software environment, investigators can generate their training data (simulated or experimentrally collected), train various models, and then decide which model is best suited for their task. Because our software is built atop of the Pytorch framework, our functions allow the user to designate which 
+device, CPU or GPU, the inference process will occur on. We allow this flexibility on the inference process because we want invesigators to be empowered to assess how their models will perform on the CPU of their choice especially where they wish to push their models onto compute limited devices such as mobile phones[@diederich2019cellstorm].   
 
 
 # Features
