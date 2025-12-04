@@ -14,7 +14,7 @@ authors:
     - name: Reza Zadegan
       corresponding: true
       affiliation: "1,2"
-affilifations:
+affiliations:
     - name: North Carolina Agricultural and Technical State University, Greensboro, North Carolina, United States
       index: 1
     - name: Joint School of Nanoscience and Nanoengineering, Greensboro, North Carolina, United States
