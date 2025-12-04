@@ -1,4 +1,4 @@
-name: image_seg
+name: dl4smlm
 channels:
   - nvidia
   - anaconda
@@ -361,4 +361,4 @@ dependencies:
   - zipp=3.17.0=pyhd8ed1ab_0
   - zlib=1.2.13=hd590300_5
   - zstd=1.5.5=hc292b87_0
-prefix: /nas/longleaf/home/mireed/.conda/envs/image_seg
+prefix: /nas/longleaf/home/mireed/.conda/envs/dl4smlm
